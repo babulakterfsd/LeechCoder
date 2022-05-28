@@ -16,7 +16,7 @@ const StyledBox = styled(Box)(({theme}) => ({
 const Rightbar = () => {
     return (
         <StyledBox flex={1} p={1} sx={{display: {xs: "none", sm: "block"}}}>
-           <Box position="fixed" p={2}>
+           <Box position="fixed" style={{padding: '0px 16px 16px 2px'}}>
               <Typography variant='h6' fontWeight={100}>
                  Online Lecches
               </Typography>
@@ -34,48 +34,50 @@ const Rightbar = () => {
               <ImageList cols={3} rowHeight={100} gap={5}> 
                   <ImageListItem>
                      <img
-                        src={`${nayeem}?w=164&h=164&fit=crop&auto=format`}
-                        srcSet={`${nayeem}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                        src={`${nayeem}`}
+                        srcSet={`${nayeem}`}
                         alt={nayeem}
                         loading="lazy"
+                        height="100px"
+                        width="100px"
                      />
                   </ImageListItem>
                   <ImageListItem>
                      <img
-                        src={`${mehedi}?w=164&h=164&fit=crop&auto=format`}
-                        srcSet={`${mehedi}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                        src={`${mehedi}`}
+                        srcSet={`${mehedi}`}
                         alt={mehedi}
                         loading="lazy"
                      />
                   </ImageListItem>
                   <ImageListItem>
                      <img
-                        src={`${mehedi1}?w=164&h=164&fit=crop&auto=format`}
-                        srcSet={`${mehedi1}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                        src={`${mehedi1}`}
+                        srcSet={`${mehedi1}`}
                         alt={mehedi1}
                         loading="lazy"
                      />
                   </ImageListItem>
                   <ImageListItem>
                      <img
-                        src={`${rownok}?w=164&h=164&fit=crop&auto=format`}
-                        srcSet={`${rownok}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                        src={`${rownok}`}
+                        srcSet={`${rownok}`}
                         alt={rownok}
                         loading="lazy"
                      />
                   </ImageListItem>
                   <ImageListItem>
                      <img
-                        src={`${monir}?w=164&h=164&fit=crop&auto=format`}
-                        srcSet={`${monir}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                        src={`${monir}`}
+                        srcSet={`${monir}`}
                         alt={monir}
                         loading="lazy"
                      />
                   </ImageListItem>
                   <ImageListItem>
                      <img
-                        src={`${mehedi}?w=164&h=164&fit=crop&auto=format`}
-                        srcSet={`${mehedi}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                        src={`${mehedi}`}
+                        srcSet={`${mehedi}`}
                         alt={mehedi}
                         loading="lazy"
                      />
@@ -86,7 +88,7 @@ const Rightbar = () => {
               <Typography variant='h6' fontWeight={100} mt={5}>
                  Latest Stories
               </Typography>
-               <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
+               <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper', marginTop: '-5px' }}>
             <ListItem alignItems="flex-start">
             <ListItemAvatar>
                <Avatar alt="Remy Sharp" src={mehedi} />
