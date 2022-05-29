@@ -37,8 +37,6 @@ import {
   const StyledBox = styled(Box)(({theme}) => ({
     width: '400px',
     height: '280px',
-    background: '#fff',
-    color: '#000',
     borderRadius: '20px',
     padding: '30px 30px 320px 30px',
     [theme.breakpoints.down("sm")] : {
@@ -69,7 +67,7 @@ import {
           aria-labelledby="modal-modal-title"
           aria-describedby="modal-modal-description"
         >
-          <StyledBox>
+          <StyledBox bgcolor={"background.default"} color={"text.primary"}>
             <Typography variant="h6" color="gray" textAlign="center" mb={2}>
               Create post
             </Typography>

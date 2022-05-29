@@ -3,11 +3,11 @@ import { Route, Routes } from 'react-router-dom';
 import Home from '../../pages/Home';
 import NotFound from '../../pages/NotFound';
 
-function AllRoutes() {
+function AllRoutes({mode, setMode}) {
     return (
         <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/home" element={<Home />} />
+            <Route path="/" element={<Home mode={mode} setMode={setMode} />} />
+            <Route path="/home" element={<Home mode={mode} setMode={setMode} />} />
             <Route path="*" element={<NotFound />} />
         </Routes>
     );

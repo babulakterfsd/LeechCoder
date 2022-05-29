@@ -6,12 +6,12 @@ import Rightbar from '../components/home/Rightbar';
 import Sidebar from '../components/home/Sidebar';
 import Navbar from '../shared/sharedComponents/Navbar';
 
-const Home = () => {
+const Home = ({mode, setMode}) => {
     return (
-        <Box>
+        <Box bgcolor={"background.default"} color={"text.primary"}>
             <Navbar/>
             <Stack direction="row" spacing={2} justifyContent="space-between">
-                <Sidebar/>
+                <Sidebar mode={mode} setMode={setMode}/>
                 <Feed/>
                 <Rightbar/>
             </Stack>
